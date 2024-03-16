@@ -1,0 +1,21 @@
+.mainCont {
+  display: flex;
+  gap: 24px;
+}
+
+.movieTitle {
+  font-size: 48px;
+}
+
+.genresList {
+  display: flex;
+  gap: 24px;
+}
+
+.text {
+  font-size: 24px;
+}
+
+.secondaryTitle {
+  font-size: 32px;
+}
