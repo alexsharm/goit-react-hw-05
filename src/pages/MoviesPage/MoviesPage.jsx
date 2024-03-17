@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import SearchMovie from "../../components/SearchMovie/SearchMovie";
 import { getMoviesByQuery } from "../../movies-api";
 import { useSearchParams } from "react-router-dom";
-import MoviesList from "../../components/MoviesList/MoviesList";
+import MovieList from "../../components/MovieList/MovieList";
 
 export default function MoviesPage() {
   const [error, setError] = useState(false);
@@ -31,7 +31,7 @@ export default function MoviesPage() {
       {loading && <b>Loading...</b>}
       {error && <b>Error occured</b>}
       <SearchMovie />
-      <MoviesList movies={movies} />
+      <MovieList movies={movies} />
     </>
   );
 }

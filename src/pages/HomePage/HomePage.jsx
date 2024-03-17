@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTrendingMovies } from "../../movies-api";
-import MoviesList from "../../components/MoviesList/MoviesList";
+import MovieList from "../../components/MovieList/MovieList";
 
 export default function HomePage() {
   const [movies, setMovies] = useState([]);
@@ -25,7 +25,7 @@ export default function HomePage() {
     <>
       {loading && <b>Loading...</b>}
       {error && <b>Error occured</b>}
-      <MoviesList movies={movies} />
+      <MovieList movies={movies} />
     </>
   );
 }
